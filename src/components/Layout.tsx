@@ -34,7 +34,7 @@ export function Layout() {
       <main className="wrap"><Outlet /></main>
       <ChatWidget />
       <footer className="footer">
-        <div className="wrap">© 2025 ТПУ Маркет. Создано студентами Томского политехнического университета.</div>
+        <div className="wrap">© 2026 ТПУ Маркет. Создано студентами Томского политехнического университета.</div>
       </footer>
     </>
   );

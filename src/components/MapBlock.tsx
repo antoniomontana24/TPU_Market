@@ -1,6 +1,6 @@
 interface Props {
-  dorms: string[]; // short dorm names of the selected items, e.g. ['Общ. №13', 'Общ. №19']
-  walkMinutes?: number; // comes from the backend or a routing API later
+  dorms: string[];
+  walkMinutes?: number;
 }
 
 export function MapBlock({ dorms, walkMinutes = 6 }: Props) {

@@ -27,11 +27,11 @@ export interface Listing {
 
 export interface Filters {
   search: string;
-  dorms: string[];          // было: dorm: string | null
+  dorms: string[];
   categories: string[];
   priceMin: number;
   priceMax: number;
-  offerTypes: OfferType[];  // было: offerType: OfferType | 'all'
+  offerTypes: OfferType[];
   conditions: Condition[];
   onlyAvailable: boolean;
   sort: SortKey;
@@ -65,8 +65,8 @@ export interface AppNotification {
   body: string;
   createdAt: number;
   read: boolean;
-  link?: string;       // куда вести: /listing/:id, /profile, /chats, /cart
-  threadId?: string;   // для type=message — открыть конкретный диалог
+  link?: string;       
+  threadId?: string;
   listingId?: number;
 }
 
@@ -94,3 +94,4 @@ export interface CompletedDeal {
   price: number; kind: 'buy' | 'sell' | 'gift'; review?: number;
 }
 export interface CancelledBooking { id: string; when: string; title: string; reason: string }
+

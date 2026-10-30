@@ -17,9 +17,6 @@ export default function CatalogPage() {
 
   return (
     <>
-      <section className="safe">
-        <div><strong>Безопасный кампусный обмен ТПУ</strong><br /><small>Верификация через аккаунт TPU.RU</small></div>
-      </section>
       <div className="layout">
         <FilterSidebar filters={filters} onChange={update} onReset={() => setState(DEFAULT_FILTERS)} />
         <section>

@@ -62,7 +62,7 @@ export function BookingsProvider({ children }: { children: ReactNode }) {
     });
     const b = state.bookings.find((x) => x.id === id);
     if (b) {
-      listings.updateStatus(b.listingId, 'sold');           // объявление уходит из каталога
+      listings.updateStatus(b.listingId, 'sold');
       notif.push({ type: 'purchase', title: 'Сделка завершена', body: `«${b.title}» получено. Оставьте отзыв соседу — 5 секунд`, listingId: b.listingId, link: '/profile' });
     }
   }, [state.bookings, listings, notif]);
