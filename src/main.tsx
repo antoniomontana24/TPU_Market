@@ -12,7 +12,7 @@ import { ChatProvider } from './context/ChatContext';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/studobmen">
       <CartProvider>
         <FavoritesProvider>
           <NotificationsProvider>
