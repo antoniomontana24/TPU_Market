@@ -277,3 +277,23 @@ time, small { color: var(--muted); font-size: 12px; }
 .notif__txt small { color: var(--muted); font-weight: 400; }
 .notif__dot { width: 9px; height: 9px; border-radius: 50%; background: var(--green); flex: none; margin-top: 4px; }
 @media (max-width: 600px) { .chatw { right: 0; bottom: 0; width: 100vw; height: 70vh; border-radius: 16px 16px 0 0; } }
+
+/* ===== Авторизация ===== */
+.auth { min-height: 100vh; display: grid; grid-template-columns: 1.1fr 1fr; background: var(--bg); }
+.auth__brand { background: linear-gradient(160deg, #0a7a35, #1f2937); color: #fff; padding: 48px 40px; display: grid; align-content: center; gap: 18px; }
+.auth__brand h1 { margin: 0; font-size: 34px; line-height: 1.15; }
+.auth__brand p { color: #d7e6dc; margin: 0; max-width: 42ch; }
+.auth__ticks { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 8px; color: #eafff2; font-weight: 600; }
+.logo--inv, .logo--inv small { color: #fff; }
+.auth__card { background: var(--card); margin: auto; width: min(440px, 92vw); border-radius: 16px; padding: 32px; box-shadow: 0 18px 50px rgba(0,0,0,.10); display: grid; gap: 14px; align-self: center; }
+.auth__card--wide { width: min(560px, 92vw); }
+.auth__card h2 { margin: 0; font-size: 22px; }
+.auth__or { display: flex; align-items: center; gap: 10px; color: var(--muted); font-size: 12px; }
+.auth__or::before, .auth__or::after { content: ''; height: 1px; background: var(--line); flex: 1; }
+.auth__form { display: grid; gap: 12px; }
+.auth__form .field input, .auth__form .field select { padding: 11px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--tint); font-weight: 400; }
+.auth__err { color: #b91c1c; font-size: 13px; margin: 0; }
+.auth__foot { display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; font-size: 13px; }
+.auth__hint { text-align: center; }
+.sso { display: flex; gap: 8px; align-items: center; justify-content: center; }
+@media (max-width: 860px) { .auth { grid-template-columns: 1fr; } .auth__brand { padding: 28px 20px; } .auth__brand h1 { font-size: 26px; } }
